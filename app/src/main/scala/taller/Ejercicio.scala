@@ -58,7 +58,7 @@ class Ejercicio {
   // Parte la lista en dos mitades. Con un número impar de elementos, la
   // primera se queda con el elemento de más.
   def partir[T](l: List[T]): (List[T], List[T]) = {
-    val mid = l.length / 2
+    val mid = (l.length + 1) / 2
     (l.take(mid), l.drop(mid))
   }
 
